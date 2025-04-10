@@ -5,10 +5,14 @@ public class Main {
         //Указание. Понятно, что задача сама по себе нерекурсивна,
         // т.к. проверка числа n на простоту никак не сводится к проверке на простоту меньших чисел.
         // Поэтому нужно сделать еще один параметр рекурсии: делитель числа, и именно по этому параметру и делать рекурсию.
-        int n = 23;
+        int n = 4;
         simplecheck (n,2);
     }
     public static void simplecheck (int n,int k) {
+        if (n==2) {
+            System.out.println("YES");
+            return;
+        }
         if (n%k == 0) {
             System.out.println("NO");
             return;
