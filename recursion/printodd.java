@@ -13,6 +13,8 @@ public class Main {
     public static void printodd() {
         Scanner console = new Scanner(System.in);
         int n = console.nextInt();
+        if (n==0)
+            return;
         if (n%2==1) {
             System.out.println(n);
             printodd();
